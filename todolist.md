@@ -6,3 +6,4 @@ TO DO LIST
 4. setup a donations page
 5. do i need a nonprofit lisence?
 6. do i need a business lisence?
+edit
