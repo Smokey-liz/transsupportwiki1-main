@@ -4,14 +4,15 @@
    <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
   function sendEmail() {
+    let EmailBody
     Email.send({
       Host: "smtp.gmail.com",
       Username : "<sender’s email address>",
-      Password : "<email password>",
-      To : '<recipient’s email address>',
+      Password : "<email password>", \\ make a protonmail account for user input
+      To : 'elizahofer02@outlook.com',
       From : "<sender’s email address>",
-      Subject : "<email subject>",
-      Body : "<email body>",
+      Subject : "TSWsuggestion",
+      Body : EmailBody,
     })
     .then(function(message){
       alert("mail sent successfully")
@@ -84,5 +85,5 @@
   <a class="linkbutton" href="transsupportwikimain.html">back</a>
   <form method="post">
 		<input type="button" value="Send Email" onclick="sendEmail()"/>
-	</form>  
+	</form>
 </body>
