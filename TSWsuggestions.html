@@ -96,22 +96,6 @@
   input.setAttribute("type","text");
   input.setAttribute("id","emailBody");
   document.body.appendChild(input);
-
-  function sendEmail() {
-    const EmailBody = document.getElementById("emailBody")
-    Email.send({
-      Host: "smtp.gmail.com",
-      Username : "tswelizahofer@gmail.com",
-      Password : "Ee391001771Ee>", \\change this later
-      To : 'elizahofer02@outlook.com',
-      From : "tswelizahofer@gmail.com",
-      Subject : "TSWsuggestion",
-      Body : EmailBody,
-    })
-    .then(function(message){
-      alert("mail sent successfully")
-    });
-  }
   </script>
   <h2>Type your suggestions here.</h2>
   <input id="emailBody" type="text">
