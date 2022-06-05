@@ -3,6 +3,11 @@
   <title>template.html</title>
    <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
+  const input = document.createElement("input");
+  input.setAttribute("type","text");
+  input.setAttribute("id","emailBody");
+  document.body.appendChild(input);
+
   function sendEmail() {
     const EmailBody = document.getElementById("emailBody")
     Email.send({
@@ -86,12 +91,7 @@
   <h1 class="rainbowtext1">Suggestions</h1>
   <a class="linkbutton" href="transsupportwikimain.html">back</a>
   <p></p>
-  <script>
-    const input = document.createElement("input");
-    input.setAttribute("type","text");
-    input.setAttribute("id","emailBody");
-    document.body.appendChild(input);
-  </script>
+  
   <h2>Type your suggestions here.</h2>
   <input type="text">
   <form method="post">
