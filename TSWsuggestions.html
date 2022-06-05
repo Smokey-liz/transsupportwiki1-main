@@ -4,13 +4,13 @@
    <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
   function sendEmail() {
-    let EmailBody = prompt("message:");
+    const EmailBody = document.getElementById("emailBody")
     Email.send({
       Host: "smtp.gmail.com",
-      Username : "<sender’s email address>",
-      Password : "<email password>", \\ make a protonmail account for user input
+      Username : "tswelizahofer@gmail.com",
+      Password : "Ee391001771Ee>", \\change this later
       To : 'elizahofer02@outlook.com',
-      From : "<sender’s email address>",
+      From : "tswelizahofer@gmail.com",
       Subject : "TSWsuggestion",
       Body : EmailBody,
     })
@@ -19,7 +19,9 @@
     });
   }
   </script>
-</head>
+</head>.
+
+
 <style>
   body{
     background-color: pink;
@@ -83,6 +85,15 @@
 <body>
   <h1 class="rainbowtext1">Suggestions</h1>
   <a class="linkbutton" href="transsupportwikimain.html">back</a>
+  <p></p>
+  <script>
+    const input = document.createElement("input");
+    input.setAttribute("type","text");
+    input.setAttribute("id","emailBody");
+    document.body.appendChild(input);
+  </script>
+  <h2>Type your suggestions here.</h2>
+  <input type="text">
   <form method="post">
 		<input type="button" value="Send Email" onclick="sendEmail()"/>
 	</form>
