@@ -17,7 +17,7 @@
       To : 'elizahofer02@outlook.com',
       From : "tswelizahofer@gmail.com",
       Subject : "TSWsuggestion",
-      Body : EmailBody,
+      Body : document.getElementById(emailBody),
     })
     .then(function(message){
       alert("mail sent successfully")
@@ -95,7 +95,6 @@
   const input = document.createElement("input");
   input.setAttribute("type","text");
   input.setAttribute("id","emailBody");
-  document.body.appendChild(input);
   </script>
   <h2>Type your suggestions here.</h2>
   <input id="emailBody" type="text">
